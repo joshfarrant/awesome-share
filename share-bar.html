@@ -4,12 +4,29 @@
   <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet">
 </head>
 
-  <i class="fa fa-fw fa-twitter fa-2x"></i>
-  <i class="fa fa-fw fa-google-plus fa-2x"></i>
-  <i class="fa fa-fw fa-facebook fa-2x"></i>
-  <i class="fa fa-fw fa-reddit fa-2x"></i>
-  <i class="fa fa-fw fa-linkedin fa-2x"></i>
-  <i class="fa fa-fw fa-tumblr fa-2x"></i>
-  <i class="fa fa-fw fa-envelope fa-2x"></i>
+<a class="jf-twitter" href="https://twitter.com/share?via=farpixel&related=farpixel" target="_blank"><i class="fa fa-fw fa-twitter fa-2x"></i></a>
+<i class="fa fa-fw fa-google-plus fa-2x"></i>
+<i class="fa fa-fw fa-facebook fa-2x"></i>
+<i class="fa fa-fw fa-reddit fa-2x"></i>
+<i class="fa fa-fw fa-linkedin fa-2x"></i>
+<i class="fa fa-fw fa-tumblr fa-2x"></i>
+<i class="fa fa-fw fa-envelope fa-2x"></i>
+
 
 </html>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  var url = window.location.pathname;
+  // var url = "http://blog.farrant.me";
+  var urlEncoded = encodeURIComponent(url);
+
+  var twitterUrl = "https://twitter.com/share?via=farpixel&related=farpixel&url=" + urlEncoded;
+  $('.jf-twitter').attr("href", twitterUrl);
+
+});
+
+</script>
