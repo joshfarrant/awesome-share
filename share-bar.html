@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet">
+  <link href="share-bar.css" rel="stylesheet">
 </head>
 
-<a class="jf-twitter" href="https://twitter.com/share?via=farpixel&related=farpixel" target="_blank"><i class="fa fa-fw fa-twitter fa-2x"></i></a>
-<i class="fa fa-fw fa-google-plus fa-2x"></i>
-<i class="fa fa-fw fa-facebook fa-2x"></i>
-<i class="fa fa-fw fa-reddit fa-2x"></i>
-<i class="fa fa-fw fa-linkedin fa-2x"></i>
-<i class="fa fa-fw fa-tumblr fa-2x"></i>
-<i class="fa fa-fw fa-envelope fa-2x"></i>
+<a class="jf-twitter" target="_blank"><i class="fa fa-fw fa-twitter fa-2x"></i></a>
+<a class="jf-google-plus" target="_blank"><i class="fa fa-fw fa-google-plus fa-2x"></i></a>
+<a class="jf-facebook" target="_blank"><i class="fa fa-fw fa-facebook fa-2x"></i></a>
+<a class="jf-reddit" target="_blank"><i class="fa fa-fw fa-reddit fa-2x"></i></a>
+<a class="jf-linkedin" target="_blank"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>
+<a class="jf-tumblr" target="_blank"><i class="fa fa-fw fa-tumblr fa-2x"></i></a>
+<a class="jf-stumbleupon" target="_blank"><i class="fa fa-fw fa-stumbleupon fa-2x"></i></a>
+<a class="jf-buffer" target="_blank"><i class="fa fa-fw fa-paw fa-2x"></i></a> <!-- Need to source a Buffer icon -->
+<a class="jf-rss" target="_blank"><i class="fa fa-fw fa-rss fa-2x"></i></a>
 
 
 </html>
@@ -20,12 +23,32 @@
 
 $(document).ready(function() {
 
-  var url = window.location.pathname;
-  // var url = "http://blog.farrant.me";
-  var urlEncoded = encodeURIComponent(url);
+  // Define your site's root URL, and your Twitter username here
+  var rootUrl = "http://blog.farrant.me/";
+  var twitterUser = "farpixel"
 
-  var twitterUrl = "https://twitter.com/share?via=farpixel&related=farpixel&url=" + urlEncoded;
+  var url = window.location.pathname;
+  var title = "{{{title}}}";
+
+  var twitterUrl = "https://twitter.com/share?via=" + twitterUser + "&related=" + twitterUser + "&url=" + url;
+  var googlePlusUrl = "https://plus.google.com/share?url=" + url;
+  var facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+  var redditUrl = "http://www.reddit.com/submit?url=" + url + "&title=" + title;
+  var linkedinUrl = "http://www.linkedin.com/shareArticle?url=" + url + "&title=" + title;
+  var tumblrUrl = "http://www.tumblr.com/share?u=" + url + "&t=" + title;
+  var stumbleuponUrl = "http://www.stumbleupon.com/submit?url=" + url + "&title=" + title;
+  var bufferUrl = "http://bufferapp.com/add?url=" + url + "&text=" + title;
+  var rssUrl = rootUrl + "rss";
+
   $('.jf-twitter').attr("href", twitterUrl);
+  $('.jf-google-plus').attr("href", googlePlusUrl);
+  $('.jf-facebook').attr("href", facebookUrl);
+  $('.jf-reddit').attr("href", redditUrl);
+  $('.jf-linkedin').attr("href", linkedinUrl);
+  $('.jf-tumblr').attr("href", tumblrUrl);
+  $('.jf-stumbleupon').attr("href", stumbleuponUrl);
+  $('.jf-buffer').attr("href", bufferUrl);
+  $('.jf-rss').attr("href", rssUrl);
 
 });
 
