@@ -2,5 +2,41 @@ a,
 a:visited,
 a:hover,
 a:active {
+	color: inherit;
+}
+
+a.jf-twitter {
+	color: #55ACEE;
+}
+
+a.jf-google-plus {
+	color: #DD4B39;
+}
+
+a.jf-facebook {
+	color: #3B5998;
+}
+
+a.jf-reddit {
+	color: #FF5700;
+}
+
+a.jf-linkedin {
+	color: #007BB6;
+}
+
+a.jf-tumblr {
+	color: #32506d;
+}
+
+a.jf-stumbleupon {
+	color: #EB4924;
+}
+
+a.jf-buffer {
 	color: #000000;
+}
+
+a.jf-rss {
+	color: #F26522;
 }
