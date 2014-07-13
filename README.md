@@ -45,7 +45,6 @@ Finally, in js/share-bar.js you will need to edit the three lines at the top of 
 var twitterUser = "TWITTER_USERNAME";
 var rootUrl = "{{@blog-url}}";
 var title = "{{{title}}}";
-
 ```
 
 
