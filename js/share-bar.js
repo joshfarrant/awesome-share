@@ -8,16 +8,18 @@ $(document).ready(function() {
 
   // Builds html and inserts it into div
   var html =""
-  html += '<a id="jf-twitter" class="jf-link" target="_blank" jf-network="Twitter"><i class="fa fa-fw fa-twitter fa-2x"></i></a>';
-  html += '<a id="jf-google-plus" class="jf-link" target="_blank" jf-network="Google+"><i class="fa fa-fw fa-google-plus fa-2x"></i></a>';
-  html += '<a id="jf-facebook" class="jf-link" target="_blank" jf-network="Facebook"><i class="fa fa-fw fa-facebook fa-2x"></i></a>';
-  html += '<a id="jf-reddit" class="jf-link" target="_blank" jf-network="Reddit"><i class="fa fa-fw fa-reddit fa-2x"></i></a>';
-  html += '<a id="jf-linkedin" class="jf-link" target="_blank" jf-network="LinkedIn"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>';
-  html += '<a id="jf-tumblr" class="jf-link" target="_blank" jf-network="Tumblr"><i class="fa fa-fw fa-tumblr fa-2x"></i></a>';
-  html += '<a id="jf-stumbleupon" class="jf-link" target="_blank" jf-network="StumbleUpon"><i class="fa fa-fw fa-stumbleupon fa-2x"></i></a>';
-  html += '<a id="jf-buffer" class="jf-link" target="_blank" jf-network="Buffer"><img src="{{asset "icons/buffer.ico"}}"></a>'; <!-- Need to source a Buffer icon -->
-  html += '<a id="jf-rss" class="jf-link" target="_blank" jf-network="RSS"><i class="fa fa-fw fa-rss fa-2x"></i></a>';
+  html += '<a id="jf-twitter" class="jf-link" target="_blank" jf-network="Twitter"><i class="fa fa-fw fa-twitter"></i></a>';
+  html += '<a id="jf-google-plus" class="jf-link" target="_blank" jf-network="Google+"><i class="fa fa-fw fa-google-plus"></i></a>';
+  html += '<a id="jf-facebook" class="jf-link" target="_blank" jf-network="Facebook"><i class="fa fa-fw fa-facebook "></i></a>';
+  html += '<a id="jf-reddit" class="jf-link" target="_blank" jf-network="Reddit"><i class="fa fa-fw fa-reddit"></i></a>';
+  html += '<a id="jf-linkedin" class="jf-link" target="_blank" jf-network="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>';
+  html += '<a id="jf-tumblr" class="jf-link" target="_blank" jf-network="Tumblr"><i class="fa fa-fw fa-tumblr"></i></a>';
+  html += '<a id="jf-stumbleupon" class="jf-link" target="_blank" jf-network="StumbleUpon"><i class="fa fa-fw fa-stumbleupon"></i></a>';
+  html += '<a id="jf-buffer" class="jf-link" target="_blank" jf-network="Buffer"><img src="icons/buffer.ico"></a>'; <!-- Need to source a Buffer icon -->
+  html += '<a id="jf-rss" class="jf-link" target="_blank" jf-network="RSS"><i class="fa fa-fw fa-rss"></i></a>';
   $("#jf-sharebar").html(html);
+
+// "{{asset "awesome-share/icons/buffer.ico"}}"
 
   var url = window.location.pathname;
 
