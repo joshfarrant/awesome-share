@@ -1,5 +1,6 @@
 #jf-sharebar {
-	margin: 20px;
+	margin: 5px 0px;
+	font-size:1.4em;
 }
 
 #jf-sharebar a,
@@ -8,6 +9,15 @@
 #jf-sharebar a:active {
 	color: inherit;
 	text-decoration: none;
+}
+
+#jf-sharebar a {
+	opacity: 0.6;
+}
+
+#jf-sharebar a:hover,
+#jf-sharebar a:active {
+	opacity: 1.0;
 }
 
 #jf-sharebar #jf-twitter.colour {
@@ -41,8 +51,8 @@
 #jf-sharebar #jf-buffer img {
 	position: relative;
 	top: 1px;
-	width: 15px;
-	margin-left: 5px;
+	width: 21px;
+	margin-left: 7px;
 	margin-right: 3px;
 }
 

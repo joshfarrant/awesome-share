@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-  // You will need to change these three values as specified below
-  var twitterUser = "TWITTER_USERNAME"; // Enter your Twitter username
-  var rootUrl = "{{@blog.url}}"; // If using Ghost leave this line as it is, if not, enter your site's root URL, eg. "http://blog.farrant.me"
-  var title = "{{{title}}}"; // If using Ghost leave this line as it is, if not, enter the name of your site/blog
+  // Enter your Twitter username
+  var twitterUser = "TWITTER_USERNAME";
 
+  var rootUrl = "{{@blog.url}}";
+  var title = "{{{title}}}";
 
   // Builds html and inserts it into div
   var html =""
@@ -15,11 +15,9 @@ $(document).ready(function() {
   html += '<a id="jf-linkedin" class="jf-link" target="_blank" jf-network="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>';
   html += '<a id="jf-tumblr" class="jf-link" target="_blank" jf-network="Tumblr"><i class="fa fa-fw fa-tumblr"></i></a>';
   html += '<a id="jf-stumbleupon" class="jf-link" target="_blank" jf-network="StumbleUpon"><i class="fa fa-fw fa-stumbleupon"></i></a>';
-  html += '<a id="jf-buffer" class="jf-link" target="_blank" jf-network="Buffer"><img src="icons/buffer.ico"></a>'; <!-- Need to source a Buffer icon -->
+  html += '<a id="jf-buffer" class="jf-link" target="_blank" jf-network="Buffer"><img src="{{asset "awesome-share/icons/buffer.ico"}}"></a>'; <!-- Need to source a Buffer icon -->
   html += '<a id="jf-rss" class="jf-link" target="_blank" jf-network="RSS"><i class="fa fa-fw fa-rss"></i></a>';
   $("#jf-sharebar").html(html);
-
-// "{{asset "awesome-share/icons/buffer.ico"}}"
 
   var url = window.location.pathname;
 
@@ -62,8 +60,10 @@ $(document).ready(function() {
 
       $(this).attr("data-content", popoverText);
       $(this).popover('show');
+      $(this).addClass('colour');
     }, function() {
       $(this).popover('hide');
+      $(this).removeClass('colour');
     }
   );
 
