@@ -1,0 +1,47 @@
+#jf-sharebar {
+	margin: 20px;
+}
+
+#jf-sharebar a,
+#jf-sharebar a:visited,
+#jf-sharebar a:hover,
+#jf-sharebar a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+#jf-sharebar #jf-twitter.colour {
+	color: #55ACEE;
+}
+
+#jf-sharebar #jf-google-plus.colour {
+	color: #DD4B39;
+}
+
+#jf-sharebar #jf-facebook.colour {
+	color: #3B5998;
+}
+
+#jf-sharebar #jf-reddit.colour {
+	color: #FF5700;
+}
+
+#jf-sharebar #jf-linkedin.colour {
+	color: #007BB6;
+}
+
+#jf-sharebar #jf-tumblr.colour {
+	color: #32506d;
+}
+
+#jf-sharebar #jf-stumbleupon.colour {
+	color: #EB4924;
+}
+
+#jf-sharebar #jf-buffer.colour {
+	color: #000000;
+}
+
+#jf-sharebar #jf-rss.colour {
+	color: #F26522;
+}
