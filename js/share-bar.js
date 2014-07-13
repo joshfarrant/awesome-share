@@ -15,7 +15,7 @@ $(document).ready(function() {
   html += '<a id="jf-linkedin" class="jf-link" target="_blank" jf-network="LinkedIn"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>';
   html += '<a id="jf-tumblr" class="jf-link" target="_blank" jf-network="Tumblr"><i class="fa fa-fw fa-tumblr fa-2x"></i></a>';
   html += '<a id="jf-stumbleupon" class="jf-link" target="_blank" jf-network="StumbleUpon"><i class="fa fa-fw fa-stumbleupon fa-2x"></i></a>';
-  html += '<a id="jf-buffer" class="jf-link" target="_blank" jf-network="Buffer"><img src="assets/icons/buffer.ico"></a>'; <!-- Need to source a Buffer icon -->
+  html += '<a id="jf-buffer" class="jf-link" target="_blank" jf-network="Buffer"><img src="{{asset "icons/buffer.ico"}}"></a>'; <!-- Need to source a Buffer icon -->
   html += '<a id="jf-rss" class="jf-link" target="_blank" jf-network="RSS"><i class="fa fa-fw fa-rss fa-2x"></i></a>';
   $("#jf-sharebar").html(html);
 

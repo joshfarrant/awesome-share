@@ -22,17 +22,17 @@ It will also generate a link to the site's RSS feed.
 To use, simply add the following links to the bottom of the page head in default.hbs within your Ghost theme.
 
 ```html
-<link href="{{asset "css/bootstrap.min.css"}}" rel="stylesheet" />
-<link href="{{asset "css/font-awesome.min.css"}}" rel="stylesheet" />
-<link href="{{asset "css/share-bar.css"}}" rel="stylesheet" />
+<link href="{{asset "awesome-share/css/bootstrap.min.css"}}" rel="stylesheet" />
+<link href="{{asset "awesome-share/css/font-awesome.min.css"}}" rel="stylesheet" />
+<link href="{{asset "awesome-share/css/share-bar.css"}}" rel="stylesheet" />
 ```
 
 Add the following after `</html>`.
 
 ```html
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
-<script type="text/javascript" src="{{asset "js/share-bar.js"}}"></script>
+<script type="text/javascript" src="{{asset "awesome-share/js/bootstrap.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "awesome-share/js/share-bar.js"}}"></script>
 ```
 
 Next, place an empty `div` with the class `jf-sharebar` on all pages that you would like the sharebar to display.
