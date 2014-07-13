@@ -38,8 +38,12 @@
 	color: #EB4924;
 }
 
-#jf-sharebar #jf-buffer.colour {
-	color: #000000;
+#jf-sharebar #jf-buffer img {
+	position: relative;
+	top: -8px;
+	width: 25px;
+	margin-left: 10px;
+	margin-right: 5px;
 }
 
 #jf-sharebar #jf-rss.colour {
