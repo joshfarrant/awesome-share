@@ -30,7 +30,7 @@ $(document).ready(function() {
   var tumblrUrl = "http://www.tumblr.com/share?u=" + url + "&t=" + title;
   var stumbleuponUrl = "http://www.stumbleupon.com/submit?url=" + url + "&title=" + title;
   var bufferUrl = "http://bufferapp.com/add?url=" + url + "&text=" + title;
-  var rssUrl = rootUrl + "rss";
+  var rssUrl = rootUrl + "/rss";
 
   // Inserts share links into respective anchors
   $('#jf-twitter').attr("href", twitterUrl);
