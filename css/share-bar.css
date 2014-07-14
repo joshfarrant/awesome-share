@@ -15,10 +15,12 @@
 	opacity: 0.6;
 }
 
+/*
 #jf-sharebar a:hover,
 #jf-sharebar a:active {
 	opacity: 1.0;
 }
+*/
 
 #jf-sharebar #jf-twitter.colour {
 	color: #55ACEE;

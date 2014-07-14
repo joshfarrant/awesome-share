@@ -27,22 +27,28 @@ To use, simply add the following links to the bottom of the page head in default
 <link href="{{asset "awesome-share/css/share-bar.css"}}" rel="stylesheet" />
 ```
 
-Add the following after `</html>`.
+In post.hbs, add the following at the very end of the file, after all other tags are closed.
 
 ```html
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="{{asset "awesome-share/js/bootstrap.min.js"}}"></script>
-<script type="text/javascript" src="{{asset "awesome-share/js/share-bar.js"}}"></script>
+<script type="text/javascript">
+
+[Paste share-bar.js here]
+
+</script>
 ```
 
-Next, place an empty `div` with the class `jf-sharebar` on all pages that you would like the sharebar to display.
-
-```html
-<div id="jf-sharebar"></div>
-```
-
-Finally, in js/share-bar.js you will need to edit the line at the top of the file to include your Twitter username (not including the @ symbol).
+Paste the contents of js/share-bar.js in place of the text in the square brackets in the final <script> tag, ensuring that you enter your Twitter username into the `twitteruser` variable near the top of the file.
 
 ```javascript
 var twitterUser = "PUT_TWITTER_USERNAME_HERE";
+```
+
+The file cannot be referenced in the same way as the bootstrap.min.js as it contains Handlebars properties, and so needs to be run directly within a .hbs file.
+
+Next, place an empty `div` with the class `jf-sharebar` on the page in the position that you would like the sharebar to display.
+
+```html
+<div id="jf-sharebar"></div>
 ```
